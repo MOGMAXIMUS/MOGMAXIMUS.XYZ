@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url('fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#audio {
+    display: none;
+}
+
+body {
+    font-family: 'MonumentExtended', sans-serif;
+    background-color: #fff;
+    color: #000;
+    background: url('images/watermarkI.png') repeat;
+    background-size: 1515px 830px;
+    overflow-x: hidden;
+    cursor: default;
+}
+
+.home {
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav {
+    font-family: 'MonumentExtended', sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    gap: 15px;
+}
+
+.nav a {
+    background-color: #bfff00;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.nav a:hover {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: underline;
+    border-radius: 25px;
+    border: 1px solid #000;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.title h1 {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 125px;
+    color: #000;
+    margin-top: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.title img {
+    width: 370px;
+    margin-top: -25px;
+}
+
+.moma-image {
+    position: absolute;
+    top: 640px;
+    left: 1%;
+    transform: rotate(-7deg);
+    width: 550px;
+    z-index: 10; 
+    border: 0.5px solid transparent;
+}
+
+.buy-image {
+    position: absolute;
+    top: 1050px; 
+    right: 5%;
+    transform: rotate(17deg);
+    width: 275px;
+    z-index: -1;
+    border: 0.5px solid transparent;
+}
+
+.art-image {
+    position: absolute;
+    top: 1200px;
+    right: 1%;
+    transform: rotate(12deg);
+    width: 445px;
+    border: 0.5px solid transparent;
+    z-index: -1;
+}
+
+.not-image {
+    position: absolute;
+    top: 1620px;
+    left: 3%; 
+    transform: rotate(-9deg); 
+    width: 310px;
+    z-index: 10;
+    border: 0.5px solid transparent; 
+    z-index: -1;
+}
+
+.sht-image {
+    position: absolute;
+    top: 1750px;
+    left: 1%; 
+    transform: rotate(-5deg);
+    width: 474px;
+    z-index: -1;
+    border: 0.5px solid transparent;
+}
+
+.moma-image, .buy-image, .art-image, .not-image, .sht-image {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1100px) {
+    .moma-image, .buy-image, .art-image, .not-image, .sht-image {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1000px) {
+    .moma-image, .buy-image, .art-image, .not-image, .sht-image {
+        opacity: 0.75;
+    }
+}
+
+@media (max-width: 850px) {
+    .moma-image, .buy-image, .art-image, .not-image, .sht-image {
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 670px) {
+    .moma-image, .buy-image, .art-image, .not-image, .shit-image {
+        opacity: 0.65;
+    }
+}
+
+@media (max-width: 600px) {
+    .moma-image, .buy-image, .art-image, .not-image, .shit-image {
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 600px) {
+    .moma-image, .buy-image, .art-image, .not-image, .shit-image {
+        opacity: 0.5;
+    }
+}
+
+.manifesto-section {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0.7vw;
+}
+
+.manifesto h2 {
+    font-family: 'MonumentExtended';
+    font-size: 66.5px;
+    margin-bottom: 0px;
+}
+
+.manifesto {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.justified-text {
+    text-align: justify;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.no-space-paragraph {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    margin-top: -2px; 
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.canav {
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: -10px;
+    cursor: copy;
+    border: 1px solid #000;
+}
+
+.canav:hover {
+    background-color: #bfff00;
+    color: #000;
+    text-decoration: underline;
+    border: 1px solid #000;
+}
+
+#copyAlertI {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #bfff00;
+    color: #000;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'MonumentExtended', sans-serif;
+    z-index: 100;
+    display: none;
+    border: 1px solid #000;
+}
+
+.bannerI {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.5vw;
+}
+
+.bannerI::before, .bannerI::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15vw;
+    height: 100%;
+    z-index: 2;
+}
+
+.bannerI::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.bannerI::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.bannertext {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 4.5vw;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    display: inline-block;
+    animation: scroll 35s linear infinite;
+}
+
+.gallery {
+    position: relative;
+    padding: 2vw 0;
+    background-color: #fff;
+    background: url('images/watermarkI.png') repeat-y center;
+    background-size: 1512px 830px;
+    overflow: hidden;
+}
+
+.gallery::before, .gallery::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 18vw;
+    height: 100%;
+    z-index: 2;
+}
+
+.gallery::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.gallery::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: gallery-scroll 25s linear infinite;
+    width: 200%;
+}
+
+.gallery-item img {
+    height: 35vw;
+    width: auto;
+    filter: drop-shadow(15px 15px 15px #000);
+    transition: filter 0.3s ease;
+    transform: translateZ(0); 
+}
+
+.gallery-item img:hover {
+    filter: drop-shadow(25px 25px 25px #000);
+    transform: scale(1.); 
+}
+
+.I, .II, .III, .IV, .V, .VI, .VII, .VIII, .IX, .X, .XI, .XII {
+    width: 550px;  
+}
+
+@keyframes gallery-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.bannerII {
+    background-color: #ff00a2;
+    color: #fff;
+    padding: 20px 0;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8.5vw;
+    z-index: 1;
+}
+
+.bannerII .bannertextII {
+    position: relative;
+    z-index: 2; 
+}
+
+.bannerII::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+.stars-image {
+    position: absolute;
+    top: 4px;
+    right: 3%; 
+    transform: rotate(10deg); 
+    width: 400px;
+    z-index: 5;
+    border: 0.5px solid transparent;
+}
+
+.bag-image {
+    position: absolute;
+    top: 300px;
+    left: 5%; 
+    transform: rotate(-15deg); 
+    width: 280px;
+    z-index: 5;
+    border: 0.5px solid transparent; 
+}
+
+.end-image {
+    position: absolute;
+    top: 625px;
+    right: 2%; 
+    transform: rotate(6deg); 
+    width: 400px;
+    z-index: 5;
+    border: 0.5px solid transparent;
+    overflow-y: hidden;
+}
+
+.stars-image, .bag-image, .end-image {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1100px) {
+    .stars-image, .bag-image, .end-image {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1000px) {
+    .stars-image, .bag-image, .end-image {
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 850px) {
+    .stars-image, .bag-image, .end-image {
+        opacity: 0.4;
+    }
+}
+
+@media (max-width: 670px) {
+    .stars-image, .bag-image, .end-image {
+        opacity: 0.2;
+    }
+}
+
+@media (max-width: 600px) {
+    .stars-image, .bag-image, .end-image {
+        opacity: 0.1;
+    }
+}
+
+.highlightI {
+    color: #fff;
+}
+
+.highlightII {
+    color: #ff00a2;
+}
+
+.highlightIII {
+    color: #bfff00;
+}
+
+.momaclub-section {
+    text-align: center;
+    padding: 20px;
+    background: url('images/watermarkII.png');
+    background-size: 1512px 830px;
+    overflow-x: hidden;
+    cursor: default;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.momaclub-section .justified-textII {
+    position: relative;
+    z-index: 10;
+}
+
+.momaclub h2 {
+    font-family: 'MonumentExtended';
+    font-size: 66.5px;
+    margin-bottom: 0px;
+}
+
+.momaclub {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 95%;
+    font-weight: 300;
+}
+
+ .momaclub-section::before {
+    z-index: 1;
+ }
+
+.justified-textII {
+    text-align: justify;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 18px;
+    z-index: 1;
+    color: #fff;
+}
+
+.downav {
+    background-color: #fff;
+    color: #000;
+    letter-spacing: 0.5px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    z-index: 10;
+    border: 1px solid #fff;
+}
+
+.downav:hover {
+    background-color: #ff00a2;
+    color: #fff;
+    text-decoration: underline;
+    border: 1px solid #fff;
+}
+
+.modal {
+    display: none; 
+    position: sticky;
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: url('images/watermarkII.png');
+}
+
+.modal-content h2 {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 24px;
+    color: #ff00a2;
+    margin-top: 0.5vw;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (max-width: 1000px) {
+.modal-content h2 {
+    font-family: 'MonumentExtended', sans-serif;
+    font-size: 2.5vw;
+}
+}
+
+.modal-content {
+    background: url('images/watermarkI.png') repeat;
+    background-size: cover;
+    margin: 1% auto;
+    padding: 20px;
+    width: 35%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    overflow: hidden;
+    top: 35%;
+    left: 3%;
+    border: 1px solid #ff00a2;
+}
+
+.modal-content p {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.close {
+    color: #000;
+    float: right;
+    margin-top: -8px;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff00a2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.download-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'MonumentExtended', sans-serif;
+    margin-bottom: 5px;
+    align-items: center;
+    letter-spacing: 0.5px;
+    border: 1px solid #000;
+}
+
+.download-btn:hover {
+    background-color: #bfff00;
+    color: #000;
+    text-decoration: underline;
+    border: 1px solid #000;
+}
+
+#copyAlertII {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff00a2;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'MonumentExtended', sans-serif;
+    z-index: 100;
+    display: none;
+    border: 1px solid #fff;
+}
+
+footer {
+    font-family: 'MonumentExtended', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 0px;
+    font-size: 12px;
+    height: 10px;
+    letter-spacing: 1px;
+    margin-top: -7px;
+}

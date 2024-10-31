@@ -1,0 +1,154 @@
+@media (max-width: 669px){
+
+    .title h1 {
+        display: none;
+    }
+
+    .nav a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        background-color: #bfff00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-text {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        height: 140%;
+        filter: invert(0);
+    }
+
+    .nav a:hover {
+        background-color: #000;
+    }
+
+    .nav a:hover .nav-icon {
+        filter: invert(1);
+    }
+
+    .title img.mobileI {
+        display: block !important;
+        position: absolute;
+        width: 65vw;
+        height: auto;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%); 
+        z-index: 10;
+    }
+
+    .title img.Image {
+        position: relative !important; 
+        width: 52vw;
+        height: auto;
+        top: 1vw;
+        transform: translate(0, 45%);
+    }
+
+    .moma-image {
+        display: none;
+    }
+
+    .buy-image {
+        display: none;
+    }
+
+    .art-image {
+        display: none;
+    }
+    
+    .not-image {
+        display: none;
+    }
+    
+    .sht-image {
+        display: none;
+    }
+
+    .stars-image {
+        display: none;
+    }
+    
+    .bag-image {
+        display: none;
+    }
+    
+    .end-image {
+        display: none;
+    }
+
+    .manifesto-section {
+        margin-top: 55vw;
+    }
+
+    .manifesto h2 {
+        font-size: 9.8vw;
+    }
+
+    .manifesto-section {
+        margin-top: 40vw;
+    }
+
+    .manifesto {
+        width: 75vw;
+    }
+
+    .justified-text {
+        font-size: 12px;
+    }
+
+    .no-space-paragraph, .canav, #copyAlertI, .justified-textII, .downav, #copyAlertII {
+        font-size: 12px;
+    }
+
+    .momaclub {
+        width: 75vw;
+    }    
+
+    .momaclub h2 {
+        font-size: 9.8vw;
+    }
+
+    .modal-content {
+        margin: 1% auto;
+        padding: 20px;
+        width: 50%;
+        max-width: 400px;
+        text-align: center;
+        border-radius: 25px;
+        position: fixed;
+        overflow: hidden;
+        top: 55%;
+        left: 25%;
+    }
+
+    .modal-content h2 {
+        font-family: 'MonumentExtended', sans-serif;
+        font-size: 3vw;
+    }
+
+    .modal-content p {
+        margin-bottom: -5px;
+        font-size: 2.3vw;
+    }
+    
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 1.95vw;
+        cursor: pointer;
+        font-family: 'MonumentExtended', sans-serif;
+    }
+
+    
+
+}

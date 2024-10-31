@@ -1,0 +1,99 @@
+@media (max-width: 1265px) and (min-width: 670px) {
+    .title h1 {
+        display: none;
+    }
+
+    .title img.mobileI {
+        display: block !important;
+        position: absolute;
+        width: 440px;
+        height: auto;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%); 
+        z-index: 10;
+    }
+
+    .title img.Image {
+        position: relative !important; 
+        width: 350px;
+        height: auto;
+        top: 10px;
+        transform: translate(0, 45%);
+    }
+
+    .moma-image {
+        display: none;
+    }
+
+    .buy-image {
+        position: absolute;
+        top: 1050px; 
+        right: 10%;
+        transform: rotate(17deg);
+        width: 275px;
+        border: 1px solid transparent;
+        z-index: -1;
+    }
+
+    .art-image {
+        position: absolute;
+        top: 1200px;
+        right: 1%;
+        transform: rotate(12deg);
+        width: 445px;
+        border: 1px solid transparent;
+        z-index: -1;
+    }
+    
+    .not-image {
+        position: absolute;
+        top: 1670px;
+        left: 3%; 
+        transform: rotate(-9deg); 
+        width: 310px;
+        border: 1px solid transparent; 
+        z-index: -1;
+    }
+    
+    .sht-image {
+        position: absolute;
+        top: 1800px;
+        left: 2%; 
+        transform: rotate(-5deg);
+        width: 474px;
+        z-index: -1;
+        border: 1px solid transparent;
+    }
+
+    .manifesto-section {
+        margin-top: 270px;
+    }
+
+    .bannertext {
+        text-align: center;
+        line-height: 1.2;
+        max-width: 100%;
+        transition: color 0.3s ease;
+    }
+
+    .stars-image {
+        position: absolute;
+        z-index: 1; 
+    }
+
+    .bag-image {
+        position: absolute;
+        z-index: 1; 
+    }
+
+    .end-image {
+        position: absolute;
+        z-index: 1; 
+    }
+
+    .downav {
+        position: relative;
+        z-index: 10 !important;
+    }
+}
