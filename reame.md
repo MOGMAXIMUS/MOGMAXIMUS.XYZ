@@ -1,4 +1,5 @@
 **MOGMAXIMUS.XYZ**
+
 The official website of MOGMAXIMUS (**$MOMA**) on Solana.
 
 **"Pablo Picasso said: 'Bad artists copy. Good artists steal."**
