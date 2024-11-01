@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     //copy address (canav)
-    const copyText = '5JiXuhb3B8N5MMKMqN4NfZeCjyAH8c64J6Y7Zrq6YW69'; //paste here new CA
+    const copyText = 'FGHMbobCRNGVFm1dz5hCdgombmpReVppFRKQoGxXpump'; //paste here new CA
     const copyAddressElement = document.querySelector('.canav');
     const copyAlertI = document.getElementById('copyAlertI');
 
